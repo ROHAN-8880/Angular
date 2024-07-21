@@ -1,0 +1,19 @@
+.content{
+    padding: 24px;
+    // background-color: gray;
+    // background-color: gray;
+}
+mat-toolbar{
+    position: relative;
+    z-index: 5;
+    background-color: red;
+}
+mat-sidenav-container{
+    height: calc(100vh - 64px);
+    // background-color: blue;
+}
+
+mat-sidenav,
+mat-sidenav-content{
+    transition: all 500ms ease-in-out;
+}

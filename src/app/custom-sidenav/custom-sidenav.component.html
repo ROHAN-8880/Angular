@@ -1,0 +1,32 @@
+<div class="sidenav-header" >
+  <img src="favicon.ico" [width]="profilePicSize()" height="profilePicSize()"/>
+  <div class="header-text" [class.hide-header-text]="sideNavCollapsed()">
+    <h2>Your channel</h2>
+    <p>Swamy</p>
+  </div>
+
+  <mat-nav-list>
+    <a mat-list-item routerLink="/dashboard" routerLinkActive="selected-menu-item" #rla="routerLinkActive" [activated]="rla.isActive"
+    class="menu-item">
+        <mat-icon [fontSet]="rla.isActive ? 'material-icons' : 'material-icons-outlined'" matListItemIcon>dashboard</mat-icon>
+        <span matListItemTitle>Dashboard</span>
+    </a>
+    <a mat-list-item routerLink="/video" routerLinkActive="selected-menu-item" #rlaa="routerLinkActive" [activated]="rlaa.isActive"
+    class="menu-item">
+        <mat-icon [fontSet]="rlaa.isActive ? 'material-icons' : 'material-icons-outlined'" matListItemIcon>video_library</mat-icon>
+        <span matListItemTitle>Video</span>
+    </a>
+    <a mat-list-item routerLink="/analytics" routerLinkActive="selected-menu-item" #rlaaa="routerLinkActive" [activated]="rlaaa.isActive"
+    class="menu-item">
+        <mat-icon matListItemIcon [fontSet]="rlaaa.isActive ? 'material-icons' : 'material-icons-outlined'">analytics</mat-icon>
+        <span matListItemTitle>Analytics</span>
+    </a>
+    <a mat-list-item routerLink="/comments" routerLinkActive="selected-menu-item" #rlab="routerLinkActive" [activated]="rlab.isActive"
+    class="menu-item">
+        <mat-icon matListItemIcon [fontSet]="rlab.isActive ? 'material-icons' : 'material-icons-outlined'">comment</mat-icon>
+        <span matListItemTitle>Comments</span>
+    </a>
+</mat-nav-list>
+</div>
+
+
